@@ -72,7 +72,7 @@ var view = {
     var todosUl = document.querySelector('ul');
     todosUl.innerHTML = '';
     todoList.todos.forEach(function(todo, position){
-      var todoP = document.createElement('p');
+      var todoLi = document.createElement('li');
       var todoTextWithCompletion = '';
 
       if (todo.completed === true) {
@@ -80,10 +80,10 @@ var view = {
       } else {
         todoTextWithCompletion = '( ) ' + todo.todoText;
       }
-      todoP.id = position;
-      todoP.textContent = todoTextWithCompletion;
-      todoP.appendChild(this.createDeleteButton());
-      todosUl.appendChild(todoP);
+      todoLi.id = position;
+      todoLi.textContent = todoTextWithCompletion;
+      todoLi.appendChild(this.createDeleteButton());
+      todosUl.appendChild(todoLi);
     },this);
   },
   createDeleteButton : function(){

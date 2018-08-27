@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: #099696;               /* Dark gray */
+  background-color: rgba(73, 66, 66, 0.521);
+  font-family: "Helvetica", "Arial", sans-serif;
+
+}
+
+header{
+    justify-content: center;
+    border: red solid 1px;
+    width: 100%;
+    text-align: center;
+}
+h1 {
+  font-size: 60px;
+  padding: 20px;
+  
+}
+.todoList-container{
+  border: 1px solid #fff;
+  margin: 20px;
+  display: flex;
+  height: 100vh;
+
+}
+.button-group-container{
+  display: flex;
+  flex-direction: column;
+  border: #099696 solid 1px;
+  width: 500px;
+  margin: 5px;
+}
+.add{
+  border: red 1px solid;
+  display: inline;
+}
+
+.displayed-todos-container{
+  border: blueviolet solid 1px;
+  width: 100%;
+  margin: 5px;
+  float:right;
+  padding-top: 50px;
+
+
+}
+
+
+
+
+
+
+
+
+
+.button {
+color: #FFF;
+background-color: #5995DA;
+font-weight: bold;
+padding: 10px;               /* between content and border*/
+text-align: center;          
+border: 2px solid #5D6063;
+border-radius: 10px;       /*button roundness*/
+width: 100px;
+margin: 10px auto;
+
+}
+
+.button:hover, .button:visited:hover {
+color: #FFF;
+background-color: #76AEED;
+}
+.button:active, .button:visited:active {
+color: #FFF;
+background-color: rgb(62, 108, 161);  /* Blue */
+}
+
